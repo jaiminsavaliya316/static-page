@@ -1,12 +1,26 @@
 import { createRoot } from "react-dom/client"
 const root = createRoot(document.getElementById("root"))
 
+function Header() {
+  return (
+      <header>
+          <img src="src\react js_logo_react_react native_icon.svg" width="40px" alt="React logo" />
+      </header>
+  )
+}
+
+function Footer() {
+  return (
+      <footer>
+          <small>© 2024 Savaliya. All rights reserved.</small>
+      </footer>
+  )
+}
+
 function Page() {
     return (
-        <div>
-            <header>
-                <img src="src\react js_logo_react_react native_icon.svg" width="40px" alt="React logo" />
-            </header>
+        <>
+            <Header />
             <main>
                 <h1>Reason I am excited to learn React</h1>
                 <ol>
@@ -14,10 +28,8 @@ function Page() {
                     <li>I am more likely to get a job as a front end developer if I know React</li>
                 </ol>
             </main>
-            <footer>
-                <small>© 2024 Ziroll development. All rights reserved.</small>
-            </footer>
-        </div>
+
+        </>
     )
 }
 
